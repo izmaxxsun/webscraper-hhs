@@ -50,6 +50,23 @@ max_limit_reached = soup.find_all(text="maximum")
                     print('First name iteration: ' + letter)
                     scrape_search_result(POST_URL, form_data, Person, person_list, agency)
 ```
+# How to Run
+1 - Create an Elastic deployment. I used Elastic Cloud to get going quickly (https://www.elastic.co/cloud/).
+2 - Get the [Elastic Cloud ID](https://www.elastic.co/guide/en/cloud/current/ec-cloud-id.html)
+3 - [Create an API Key](https://www.elastic.co/guide/en/kibana/master/api-keys.html)
+4 - Create a Python virtual environment
+```
+$ python3 -m venv env
+```
+5 - Install the Python libraries in *requirements.txt* within the virtual environment
+```
+$ pip install -r requirements.txt
+```
+6 - Set environment variables in terminal so the script can get the Cloud ID and API Key
+```
+export CLOUD_ID=<CLOUD_ID>
+export CLOUD_API_KEY=<CLOUD_API_KEY>
+```
 
 # Suggestions/Improvements
 Feel free to make suggestions or improvements, always love to learn better ways and surely there is room for optimization.
