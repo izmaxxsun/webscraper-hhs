@@ -67,6 +67,7 @@ $ pip install -r requirements.txt
 export CLOUD_ID=<CLOUD_ID>
 export CLOUD_API_KEY=<CLOUD_API_KEY>
 ```
+Note: This is currently only being run on an Agency at a time as each Agency takes quite a bit of time.  Future improvement would be to set this up for parallel processing.
 
 # Suggestions/Improvements
 Feel free to make suggestions or improvements, always love to learn better ways and surely there is room for optimization.
